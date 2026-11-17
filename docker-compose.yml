@@ -1,0 +1,20 @@
+services:
+  odoo:
+    image: odoo:18.0
+    container_name: odoo
+    ports:
+      - "8018:8069"
+
+    volumes:
+      - ./odoo.conf:/etc/odoo/odoo.conf
+      - ./addons:/mnt/extra-addons
+      - odoo-data:/var/lib/odoo
+
+    environment:
+      - HOST=host.docker.internal
+      - PORT=5432
+      - USER=payload
+      - PASSWORD=portfolio
+
+volumes:
+  odoo-data:
