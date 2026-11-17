@@ -1,26 +1,16 @@
 {
     'name': 'School Management System',
-    'version': '17.0.1.0.0',
-    'summary': 'Custom Odoo module',
-    'description': """
-        Custom module for Odoo 17.
-    """,
-    'author': 'tarek elasyed',
+    'version': '18.0.1.0.0',
+    'summary': 'School Management System',
+    'author': 'Tarek Elsayed',
     'website': 'https://ruknova.tech',
-    'category': 'Custom',
+    'category': 'Education',
     'license': 'LGPL-3',
 
-    'depends': [
-        'base',
-    ],
+    'depends': ['base'],
 
     'data': [
-    'security/ir.model.access.csv',
-
-    ],
-
-    'demo': [
-        # 'demo/demo.xml',
+        'security/ir.model.access.csv',
     ],
 
     'installable': True,
